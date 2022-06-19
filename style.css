@@ -50,7 +50,7 @@ img.star {
 }
 
 .container .rating {
-	display: none;
+	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
 	align-items: stretch;
@@ -69,12 +69,18 @@ img.star {
 	cursor: pointer;
 }
 
+.container .rating .submit:hover {
+	/* background-color: red; */
+	transform: scale(.98);
+	border: solid orange 1px;
+}
+
 .container .thxu {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
 	justify-content: space-between;
-	/* align-items: stretch; */
+	align-items: center;
 	margin: 30px;
 	text-align: center;
 	
@@ -86,14 +92,16 @@ img.star {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--dark-blue);
-	height: 40px;
+	height: 30px;
+	width: 180px;
 	margin: 20px;
 	color: var(--orange);
 	border-radius: 20px;
+	font-size: 12px;
 }
 
 .ill-thxu {
-	width: 100px;
+	width: 150px;
 }
 
 .title {
@@ -122,4 +130,14 @@ img.star {
 	background-color: var(--dark-blue);
 	color: var(--light-grey);
 	cursor: pointer;
+}
+
+.votes .vote:hover {
+	background-color: var(--light-grey);
+	color: var(--white);
+}
+
+.votes .vote.active {
+	background-color: var(--orange);
+	color: var(--white);
 }
