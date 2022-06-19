@@ -45,21 +45,20 @@ img.star {
 	border-radius: 20px;
 	
 	max-width: 375px;
-	height: 375px;
+	min-height: 375px;
 	text-align: left;
 }
 
 .container .rating {
-	
-	display: flex;
+	display: none;
+	flex-grow: 1;
 	flex-direction: column;
-	/* justify-content: space-around; */
 	align-items: stretch;
 	margin: 30px;
+	/* height: 100%; */
 }
 
 .container .rating .submit {
-	
 	align-items: stretch;
 	background-color: var(--orange);
 	border-style: none;
@@ -71,11 +70,30 @@ img.star {
 }
 
 .container .thxu {
-	display: none;
+	display: flex;
+	flex-grow: 1;
 	flex-direction: column;
-	/* justify-content: space-around; */
-	align-items: stretch;
+	justify-content: space-between;
+	/* align-items: stretch; */
 	margin: 30px;
+	text-align: center;
+	
+	/* height: 100%; */
+}
+
+.container .thxu .voted {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--dark-blue);
+	height: 40px;
+	margin: 20px;
+	color: var(--orange);
+	border-radius: 20px;
+}
+
+.ill-thxu {
+	width: 100px;
 }
 
 .title {
