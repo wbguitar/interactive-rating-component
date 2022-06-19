@@ -40,16 +40,16 @@ img.star {
 .container {
 	display: flex;
 	flex-direction: column;
-	
+
 	background: linear-gradient(45deg, var(--very-dark-blue), var(--dark-blue));
 	border-radius: 20px;
-	
-	max-width: 375px;
+
+	max-width: 410px;
 	min-height: 375px;
 	text-align: left;
 }
 
-.container .rating {
+.container #rating {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
@@ -58,7 +58,7 @@ img.star {
 	/* height: 100%; */
 }
 
-.container .rating .submit {
+.container #rating .submit {
 	align-items: stretch;
 	background-color: var(--orange);
 	border-style: none;
@@ -69,13 +69,13 @@ img.star {
 	cursor: pointer;
 }
 
-.container .rating .submit:hover {
+.container #rating .submit:hover {
 	/* background-color: red; */
 	transform: scale(.98);
 	border: solid orange 1px;
 }
 
-.container .thxu {
+.container #thxu {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
@@ -83,11 +83,11 @@ img.star {
 	align-items: center;
 	margin: 30px;
 	text-align: center;
-	
+
 	/* height: 100%; */
 }
 
-.container .thxu .voted {
+.container #thxu .voted {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -140,4 +140,11 @@ img.star {
 .votes .vote.active {
 	background-color: var(--orange);
 	color: var(--white);
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+		max-width: 330px;
+		margin: 20px;
+	}
 }
