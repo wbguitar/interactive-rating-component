@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://wbguitar.github.io/interactive-rating-component/)
+- [Solution URL](https://wbguitar.github.io/interactive-rating-component/)
 
 ## My process
 
